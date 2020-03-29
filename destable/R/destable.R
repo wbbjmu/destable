@@ -20,7 +20,7 @@
 #####################################################################
 #####################################################################
 
-des_table <- function(vars,normalVars=NULL,unnormalVars=NULL,
+des_table <- function(data,vars,normalVars=NULL,unnormalVars=NULL,
                       factorVars=NULL,strata,digits){
   tmp <- na.omit(data[,c(vars,strata)])
   result <- data.frame()
